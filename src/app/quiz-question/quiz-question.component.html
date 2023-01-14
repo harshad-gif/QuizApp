@@ -1,0 +1,62 @@
+<div class="container mt-5">
+    <div class="card text-center">
+        <h1 style="font-family: cursive; font-size:x-larger;">Python Quiz</h1>
+        <Span>Welcome {{name}}</Span>
+    </div>
+    <ng-container *ngIf="!quizCompleted">
+        <div class="d-flex justify-content-around py-3">
+            <div class="score">
+                <h5>{{marks}} Marks</h5>
+            </div>
+    
+            <div class="question">
+                <h5>Question{{currentQue+1}}  of {{questionList.length}}</h5>
+            </div>
+    
+            <div class="time">
+               <h5>{{count}} sec</h5>
+            </div>
+        </div>
+        <div class="progress mb-3">
+        <div class="progress-bar bg-warning " role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">😊
+        </div>
+        </div>
+    
+        <div class="ques">
+            <h4>{{questionList[currentQue]?.questionText}}</h4>
+        </div>
+    
+        <div class="options" >
+            <ol class="my-2" style="list-style-type: none;" *ngFor="let option of questionList[currentQue]?.options">
+                <li (click)="answer(currentQue+1,option)">
+                    <div appChangeBg [isCorrect]="option.correct" class="card md-3">
+                        {{option.text}}
+                    </div>
+                </li>
+    
+            </ol>
+        </div>
+    
+        <div class="d-flex justify-content-between">
+            <button [disabled]="currentQue===0" class="btn btn-primary #name" style="font-family: cursive;" (click)="preQue()">Previous</button>
+            
+            <button (click)="reset()" class="btn btn-primary" style="font-family: cursive;">Refresh</button>
+            <button class="btn btn-primary" style="font-family: cursive;" (click)="nextQue()">Next</button>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="quizCompleted">
+        <div class="card mx-auto">
+            <div class="card-body">
+              <h3>Congratulation!! You Have Complted Quiz!! Below Your Score:</h3>
+            </div>
+            <div class="card-footer">
+                <p class="lead">Total Question Attempted:{{questionList.length}} </p>
+                <p class="lead">Correct Answer: {{correctAnswer}}</p>
+                <p class="lead">Wrong Answer:{{isCorrect}}  </p>
+                <p class="lead">Total Score:{{marks}} </p>
+            </div>
+        </div>
+    </ng-container>
+
+</div>

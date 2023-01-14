@@ -1,0 +1,22 @@
+<div class="conatiner text-center py-5">
+    <h1 class="display-4">Welocme To Python Quiz App</h1>
+    <p class="lead">
+        This Quiz Contain 10 Questions each quetion carry 10 marks
+    </p>
+
+    <ul style="list-style-type: none;">
+        <li>|| Correct  question gives 10 marks.||</li>
+        <li>|| You will give 60 sec to answer each question.||</li>
+         <li>|| For reseting  quiz refresh the page.||</li>   
+
+    </ul>
+
+  </div>
+    <div class="card mx-auto text-dark " style="width: 18rem; background-color: rgb(0, 255, 221);">
+        <div class="card-body name">
+        <label>Enter Your Name:</label>
+        <input #name type="text" class="form-control " >
+        <button  class="btn btn-danger my-3" type="submit" routerLink="/question" (click)="startQuiz()">Start Quiz 😉</button>
+        </div>
+    </div>
+

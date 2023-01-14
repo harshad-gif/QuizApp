@@ -1,0 +1,218 @@
+{
+  
+"question_list":[
+    {
+        "questionText": "What does pip stand for python?",
+        "options": [{
+                "text": " Pip Installs Python"
+                
+            },
+            {
+                "text": "Pip Installs Packages"
+            },
+            {
+                "text": "Preferred Installer Program",
+                "correct": true
+            },
+            {
+                "text": "All of the mentioned"
+                
+            }
+        ],
+        "explanation": "this.propertyName is the way to access a specific property within a class"
+    },
+    {
+      "questionText": "What is a correct syntax to output 'Hello World' in Python?",
+      "options": [{
+              "text": "print('Hello World')",
+              "correct": true
+          },
+          {
+              "text": "echo('hello world')"
+          },
+          {
+              "text": "p('hello world')"
+          },
+          {
+              "text": "echo 'hello world'"
+          }
+      ],
+      "explanation": "this.propertyName is the way to access a specific property within a class"
+  },
+  {
+    "questionText": "How do you insert COMMENTS in Python code?",
+    "options": [{
+            "text": "/* */"
+          
+        },
+        {
+            "text": "//"
+           
+        },
+        {
+            "text": "#",
+            "correct": true
+        },
+        {
+            "text": "<!   !>"
+        }
+    ],
+    "explanation": "this.propertyName is the way to access a specific property within a class"
+},
+{
+  "questionText": "How do you start writing a while loop in Python",
+  "options": [{
+          "text": "while x>y:",
+          "correct": true
+      },
+      {
+          "text": "while(x>y){"
+          
+      },
+      {
+          "text": "x>y while{"
+      },
+      {
+          "text": "while x>y"
+      }
+  ],
+  "explanation": "this.propertyName is the way to access a specific property within a class"
+},
+{
+  "questionText": "Which statement is used to stop a loop?",
+  "options": [{
+          "text": "stop"
+        
+      },
+      {
+          "text": "break",
+          "correct": true
+      },
+      {
+          "text": "return"
+      },
+      {
+          "text": "exit"
+      }
+  ],
+  "explanation": "this.propertyName is the way to access a specific property within a class"
+},
+{
+  "questionText": "Which of these collections defines a TUPLE?",
+  "options": [{
+    "text": "('apple','banana')",
+    "correct": true
+  },
+  {
+      "text": "['apple','banana']"
+      
+  },
+  {
+      "text": "{'apple','banana'}"
+  },
+  {
+      "text": "{'apple':'banana'}"
+  }
+  ],
+  "explanation": "this.propertyName is the way to access a specific property within a class"
+},
+{
+  "questionText": "Which of these collections defines a LIST?",
+  "options": [{
+          "text": "('apple','banana')"
+        
+      },
+      {
+          "text": "['apple','banana']",
+          "correct": true
+      },
+      {
+          "text": "{'apple','banana'}"
+      },
+      {
+          "text": "{'apple':'banana'}"
+      }
+  ],
+  "explanation": "this.propertyName is the way to access a specific property within a class"
+},
+{
+  "questionText": "Which method can be used to replace parts of a string",
+  "options": [{
+          "text": "replaceString()"
+        
+      },
+      {
+          "text": "replace()",
+          "correct": true
+      },
+      {
+          "text": "switch()"
+      },
+      {
+          "text": "repl()"
+      }
+  ],
+  "explanation": "this.propertyName is the way to access a specific property within a class"
+},
+{
+  "questionText": "Which method can be used to return a string in upper case letters?",
+  "options": [{
+          "text": "upperCase()"
+        
+      },
+      {
+          "text": "toUpperCase()"
+          
+      },
+      {
+          "text": "upper()",
+          "correct": true
+      },
+      {
+          "text": "uppercase()"
+      }
+  ],
+  "explanation": "this.propertyName is the way to access a specific property within a class"
+},
+
+
+{
+  "questionText": "What is the correct file extension for Python files?",
+  "options": [{
+          "text": ".pt"
+        
+      },
+      {
+          "text": ".py",
+          "correct": true
+      },
+      {
+          "text": ".pyt"
+      },
+      {
+          "text": ".pyt"
+      }
+  ],
+  "explanation": "this.propertyName is the way to access a specific property within a class"
+}
+  
+],
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
